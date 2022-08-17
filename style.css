@@ -17,13 +17,13 @@
 .sessao-esquerda {
     grid-column: span 2;
     height: 100%;
-    background-color: #999999;
+    background-color: #00025e;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #27292b;
+    background-color: rgb(46, 59, 247);
     border-radius: 0px 60px 0px 0px;
 }
 
