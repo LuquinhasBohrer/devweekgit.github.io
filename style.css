@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo-resumido {
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.sessao-esquerda {
+    grid-column: span 2;
+    height: 100%;
+    background-color: #999999;
+}
+
+.right-section {
+    grid-column: span 5;
+    height: 100%;
+    background-color: #27292b;
+    border-radius: 0px 60px 0px 0px;
+}
+
+.conteudo-sessao-esquerda{
+    padding: 2rem 2rem;
+}
+
+.perfil {
+    width: 100%;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.perfil .foto-perfil {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.nome {
+    color: #D6DBDF;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.profissao {
+    color: #eeeeee;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* .contact-info { border-bottom: 2px solid #1B2631; } */
+.titulo-esquerdo {
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+.info-contato ul {
+    padding-top: 1.5rem;
+}
+
+.info-contato ul li,
+.references ul li {
+    padding: .4rem 0;
+    color: #eeeeee;
+}
+
+.info-contato ul li i,
+.references ul li i {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+h1 {
+    color: #eeeeee;
+    text-align:left;
+}
+
+.habilidades ul {
+    padding-top: 1.5rem;
+}
+.habilidades ul li p {
+    padding: .4rem 0;
+    color: #eeeeee;
+}
+
+.right-section-contents {
+    padding: 2rem 2rem;
+}
+
+.titulo-direito {
+    text-align: center;
+    color: #fae20b;
+}
+
+.gap {
+    padding-bottom: 2rem;
+}
+.conteudo-sobre-mim {
+    text-align: center;
+    font-size: 18px;
+    color: #eeeeee;
+}
