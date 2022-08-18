@@ -17,13 +17,13 @@
 .sessao-esquerda {
     grid-column: span 2;
     height: 100%;
-    background-color: #858585;
+    background-color: #1b007b;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(102, 92, 255);
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -42,44 +42,47 @@
 }
 
 .nome {
-    color: #222222;
+    color: #b3b3b3;
     font-size: 30px;
     letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.profissao {
-    color: #222222;
-    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
 }
 
+.profissao {
+    color: #b3b3b3;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+}
+
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
 .titulo-esquerdo {
-    color: #222222;
+    color: #b3b3b3;
     font-size: 20px;
 }
 
 .info-contato ul {
     padding-top: 1.5rem;
+    border-bottom: 2px solid #b3b3b3;
 }
 
 .info-contato ul li,
 .references ul li {
     padding: .4rem 0;
-    color: #222222;
+    color: #b3b3b3;
 }
 
 .info-contato ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #222222;
+    color: #b3b3b3;
 }
 
 h1 {
-    color: #222222;
+    color: #b3b3b3;
     text-align:left;
 }
 
@@ -88,7 +91,7 @@ h1 {
 }
 .habilidades ul li p {
     padding: .4rem 0;
-    color: #222222;
+    color: #b3b3b3;
 }
 
 .right-section-contents {
@@ -96,7 +99,7 @@ h1 {
 }
 
 .titulo-direito {
-    color: #222222;
+    color: #b3b3b3;
     font-size: 20px;
 }
 
@@ -105,7 +108,7 @@ h1 {
 }
 .conteudo-sobre-mim {
     font-size: 18px;
-    color: #222222;
+    color: #b3b3b3;
 }
 .experience-contents,
 .education-contents,
@@ -113,13 +116,13 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
-    color: #222222;
+    color: #b3b3b3;
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
 }
 
