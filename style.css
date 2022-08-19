@@ -116,13 +116,13 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
-    color: #b3b3b3;
+    color: #F1F8FD;
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bold;
 }
 
