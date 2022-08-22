@@ -6,7 +6,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.conteudo-resumido {
+body {
+    background-color: #1C646D;
+}
+
+.resume-contents {
     min-height: 100vh;
     width: 80%;
     margin: 2rem auto;
@@ -14,102 +18,144 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
-.sessao-esquerda {
+.left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #1b007b;
+    background-color: #38184C;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: rgb(102, 92, 255);
+    background-color: #A0CD60;
     border-radius: 0px 60px 0px 0px;
 }
 
-.conteudo-sessao-esquerda{
+.left-section-content{
     padding: 2rem 2rem;
 }
 
-.perfil {
+.profile {
     width: 100%;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid #1B2631;
 }
 
-.perfil .foto-perfil {
+.profile .profile-image {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 8px solid #1B2631;
 }
 
-.nome {
-    color: #b3b3b3;
+.name {
+    color: #A0CD60;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    padding: 1rem 0;
 }
 
-.profissao {
-    color: #b3b3b3;
+.profession {
+    color: #1C646D;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
-.titulo-esquerdo {
-    color: #b3b3b3;
+.left-title {
+    color: #1C646D;
     font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
 }
 
-.info-contato ul {
+.contact-info ul {
     padding-top: 1.5rem;
-    border-bottom: 2px solid #b3b3b3;
 }
 
-.info-contato ul li,
+.contact-info ul li,
 .references ul li {
     padding: .4rem 0;
-    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    color: #d6dbdfaf;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
-.info-contato ul li i,
+.contact-info ul li i,
 .references ul li i {
     padding-right: 1rem;
     font-size: 18px;
-    color: #b3b3b3;
+    color: #2E86C1;
 }
 
-h1 {
-    color: #b3b3b3;
-    text-align:left;
-}
-
-.habilidades ul {
+.skills ul {
     padding-top: 1.5rem;
 }
-.habilidades ul li p {
+.skills ul li p {
     padding: .4rem 0;
-    color: #b3b3b3;
+    color: #d6dbdfaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
+
+.referance-name {
+    padding-top: 1.5rem;
+    padding-bottom: .4rem;
+    font-size: 18px;
+    color: ##1F0802;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.referance-profession {
+    font-size: 16px;
+    color: #1C646D;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    padding-bottom: .4rem;
+}
+
 
 .right-section-contents {
     padding: 2rem 2rem;
 }
 
-.titulo-direito {
-    color: #b3b3b3;
-    font-size: 20px;
+.right-title {
+    color: #1C646D;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
 }
 
 .gap {
     padding-bottom: 2rem;
 }
-.conteudo-sobre-mim {
+.about-me-contents {
     font-size: 18px;
-    color: #b3b3b3;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    color: #F1F8FD;
 }
+
 .experience-contents,
 .education-contents,
 .awards-contents {
@@ -124,23 +170,124 @@ h1 {
 .awards-company-name {
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1F0802;
+    padding-bottom: .4rem;
 }
 
 .exp-time-period,
 .educationp-time-period,
 .awards-time-period {
     font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }
 
 .exp-position,
 .education-subject,
 .awards-name {
     font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1F0802;
+    padding-bottom: .4rem;
 }
 
 .exp-desc,
 .education-desc,
 .awards-desc {
     font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    border-left: 3px solid #1C646D;
     padding-left: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width:780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    
+    .right-section {
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .left-title {
+        font-size: 18px;
+    }
+
+    .right-title {
+        font-size: 18px;
+    }
+
+    .contact-info ul li,
+    .references ul li {
+        font-size: 12px;
+    }
+
+    .contact-info ul li i,
+    .references ul li i {
+        /* padding-right: 1rem; */
+        font-size: 12px;
+    }
+
+    .skills ul li p {
+        font-size: 12px;
+    }
+
+    .about-me-contents {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .exp-company-name,
+    .education-school-name,
+    .awards-company-name {
+        font-size: 18px;
+    }
+
+    .exp-time-period,
+    .educationp-time-period,
+    .awards-time-period {
+        font-size: 16px;
+    }
+
+    .exp-position,
+    .education-subject,
+    .awards-name {
+        font-size: 18px;
+    }
 }
